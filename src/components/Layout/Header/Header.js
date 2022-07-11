@@ -3,10 +3,10 @@ import { Fragment } from "react";
 import HeaderImg from "./HeaderImg/HeaderImg";
 import NavigationMenu from "./NavigationMenu/NavigationMenu";
 
-const Header = () => {
+const Header = ({onShowCart}) => {
   return (
     <Fragment>
-      <NavigationMenu />
+      <NavigationMenu onShowCart={onShowCart}/>
       <HeaderImg />
     </Fragment>
   );

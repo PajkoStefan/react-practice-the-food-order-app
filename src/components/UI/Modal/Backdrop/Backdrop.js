@@ -1,5 +1,5 @@
-const Backdrop = ({ className }) => {
-  return <div className={className} />;
+const Backdrop = ({ className, onCloseCart }) => {
+  return <div className={className} onClick={onCloseCart}/>;
 };
 
 export default Backdrop;

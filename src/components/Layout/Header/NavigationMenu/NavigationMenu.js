@@ -2,11 +2,11 @@ import HeaderCartButton from "../HeaderCartButton/HeaderCartButton";
 
 import classes from "./NavigationMenu.module.css";
 
-const NavigationMenu = () => {
+const NavigationMenu = ({onShowCart}) => {
   return (
     <header className={classes.header}>
       <h1>Yummy Yum</h1>
-      <HeaderCartButton />
+      <HeaderCartButton onClick={onShowCart}/>
     </header>
   );
 };

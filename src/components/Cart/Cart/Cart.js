@@ -12,7 +12,7 @@ const items = [
   },
 ];
 
-const Cart = () => {
+const Cart = ({ onCloseCart }) => {
   const cartItems = (
     <ul className={classes["cart-items"]}>
       {items.map((item) => {
@@ -22,14 +22,20 @@ const Cart = () => {
   );
 
   return (
-    <Modal>
+    <Modal onCloseCart={onCloseCart}>
       {cartItems}
       <div className={classes.total}>
         <span>Total Amount</span>
         <span>35.65</span>
       </div>
       <div className={classes.actions}>
-        <Button button={{ id: "btn-close", className: classes["button--alt"] }}>
+        <Button
+          button={{
+            id: "btn-close",
+            className: classes["button--alt"],
+            onClick: onCloseCart,
+          }}
+        >
           Close
         </Button>
         <Button

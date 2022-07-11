@@ -6,10 +6,10 @@ import ModalOverlay from "./ModalOverlay/ModalOverlay";
 import classes from "./Modal.module.css";
 
 const portalElementId = document.getElementById("overlays");
-const Modal = ({ children }) => {
+const Modal = ({ children, onCloseCart }) => {
   return (
     <Fragment>
-      {createPortal(<Backdrop className={classes.backdrop} />, portalElementId)}
+      {createPortal(<Backdrop className={classes.backdrop} onCloseCart={onCloseCart} />, portalElementId)}
       {createPortal(
         <ModalOverlay
           classnames={{ modal: classes.modal, content: classes.content }}
