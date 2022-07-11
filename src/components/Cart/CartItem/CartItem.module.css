@@ -37,6 +37,11 @@
   flex-direction: column;
 }
 
+.actions .actions__remove{
+  width: auto;
+  font-size: 1em;
+}
+
 @media (min-width: 768px) {
   .actions {
     flex-direction: row;
