@@ -8,7 +8,7 @@ import { DUMMY_MEALS } from "../../../data/dummy-meals";
 const AvailableMeals = () => {
   const mealsList = DUMMY_MEALS.map((meal) => {
     return (
-      <MealItem meal={meal}>
+      <MealItem key={meal.id} meal={meal}>
         {meal.name} - {meal.description} - {meal.price}
       </MealItem>
     );

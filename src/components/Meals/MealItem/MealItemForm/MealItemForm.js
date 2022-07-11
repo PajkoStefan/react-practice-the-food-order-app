@@ -10,7 +10,7 @@ const MealItemForm = ({ id }) => {
         label="Amount"
         input={{
           id: `amount_${id}`,
-          type: "nnumber",
+          type: "number",
           min: "1",
           max: "5",
           step: "1",
