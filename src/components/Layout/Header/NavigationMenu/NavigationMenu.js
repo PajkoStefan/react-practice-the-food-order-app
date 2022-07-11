@@ -1,4 +1,5 @@
 import HeaderCartButton from "../HeaderCartButton/HeaderCartButton";
+
 import classes from "./NavigationMenu.module.css";
 
 const NavigationMenu = () => {
